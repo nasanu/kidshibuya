@@ -21,6 +21,13 @@ namespace kidshibuya.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
+        public ActionResult Test()
+        {
+
+            return Content("derp");
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
